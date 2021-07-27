@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>consultas NHL hockey</title>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+</head>
+<body>
+    <h1>Proyecto Bases de Datos</h1>
+    <h2>A continuacion, se presentan querys sobre una base de datos que contiene informacion sobre jugadores, equipos y partidos de la National Hockey League entre el 2002 y el 2020.</h2>
+    <h3><a href="https://www.kaggle.com/martinellis/nhl-game-data">Link de la base de datos en Kaggle</a></h3>
+    
+    <div id="content">
+        <form action="consulta1.php" method="get">
+            <fieldset>
+                <legend></legend>
+                <h3>Consulta 1:</h3>
+                <!-- Text input-->
+                <div>
+                    El numero de jugadores que miden menos de h cm cuyo porcentaje de victorias supera el 90% entre 2010-2019 (agregacion)
+                    <div>
+                        <label>
+                            Altura h en cm: <input name="input1">
+                        </label>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div>
+                    <div>
+                        <input type="submit" value="Ejecutar consulta1">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="content">
+        <form action="consulta2.php" method="get">
+            <fieldset>
+                <legend></legend>
+                <h3>Consulta 2:</h3>
+                <div>
+                    Las temporadas  en que se marcaron mas de x goles y la cantidad de goles asociados
+                    <div>
+                        <label>
+                            x goles: <input name="input2">
+                        </label>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div>
+                    <div>
+                        <input type="submit" value="Ejecutar consulta2">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+
+
+
+        <div id="content">
+        <form action="consulta3.php" method="get">
+            <fieldset>
+                <legend></legend>
+                <h3>Consulta 3:</h3>
+                <div>
+                    Considerando R = cantidad de goals en power play por oportunidad de power play en un juego, y que cada temporada se selecciona a los equipos que obtuvieron el mÃ¡ximo R en un partido. Mostrar los X equipos que hayan sido seleccionados una mayor cantidad de veces y cuantas veces
+                    <div>
+                        <label>
+                            cantidad de equipos N: <input name="input3">
+                        </label>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div>
+                    <div>
+                        <input type="submit" value="Ejecutar consulta3">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    
+</body>
+</html>
